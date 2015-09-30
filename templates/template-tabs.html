@@ -1,0 +1,6 @@
+<div class="c-tabs">
+    <div class="c-tab" ng-repeat="tab in tabs" id="{{'t'+$index}}" ng-click="switchTab(tab,$index)">{{tab.name}}</div>
+    <div class="c-tab-view">
+        <div ng-include="currentView"></div>
+    </div>
+</div>

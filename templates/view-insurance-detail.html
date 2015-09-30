@@ -1,0 +1,41 @@
+<div class="c-header-bar c-color">新华保险</div>
+<div class="c-body">
+    <img class="c-image-full" src="http://m.e-nci.com/images/product/00371002.jpg"/>
+    <div class="c-item">
+        <h3>保险组合</h3>
+        <p class="c-color">25元保费：𡿨30万元电梯意外伤残伤害＋20万航空险〉／每年。</p>
+    </div>
+    <div class="c-item c-form">
+        <table>
+            <tr>
+                <td>份数：</td>
+                <td><div class="c-btn c-bg" ng-click="count>1?count=count-1:null">-</div>
+                    <span style="font-size: large;font-weight: 700">{{count}}</span>
+                    <div class="c-btn c-bg" ng-click="count=count+1">+</div></td>
+            </tr>
+            <tr>
+                <td>年数：</td>
+                <td><div class="c-btn c-bg" ng-click="year>1?year=year-1:null">-</div>
+                    <span style="font-size: large;font-weight: 700">{{year}}</span>
+                    <div class="c-btn c-bg" ng-click="year=year+1">+</div></td>
+            </tr>
+            <tr>
+                <td>生效日期：</td>
+                <td><input type="date" id="effective" ng-model="startTime" ng-change="getTime()"/></td>
+            </tr>
+            <tr>
+                <td>终止日期：</td>
+                <td>{{endTime}}</td>
+            </tr>
+        </table>
+    </div>
+    <c-tabs tabs="tabs"></c-tabs>
+    <!--<div class="c-tabs">-->
+        <!--<div class="c-tab">保险责任</div>-->
+        <!--<div class="c-tab">保险条款</div>-->
+        <!--<div class="c-tab-view">-->
+            <!--<div ng-include="'templates/tab-view1.html'"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<a href="#/form/{{count*25}}" class="c-footer-bar c-bg">￥{{count*year*25}}.00 立即投保</a>

@@ -1,0 +1,23 @@
+.c-radioboxes{
+    padding: 5px;
+}
+.c-radiobox{
+    padding:8px 8px 10px 10px;
+    border-radius:5px;
+    border:2px solid lightgray;
+    position: relative;
+    margin: 5px;
+}
+.c-radiobox-check{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    font-size: 1px;
+    border-radius: 2px 0 0 0;
+    color: white;
+    padding: 2px 0 0  2px;
+    line-height: 15px;
+    text-align: center;
+    background-color: #1ab394;
+    display: none;
+}

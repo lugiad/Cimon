@@ -1,0 +1,42 @@
+<div class="c-header-bar c-color">新华保险</div>
+<div class="c-body">
+    <div class="c-segment">投保人信息</div>
+    <div class="c-form-lg">
+        <table>
+            <tr>
+                <td>姓名：</td>
+                <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td>身份证号：</td>
+                <td><input type="tel" ng-model='idCard' ng-blur="getBirthday()"/></td>
+            </tr>
+            <tr>
+                <td>出生日期：</td>
+                <td><input type="text" ng-model='birth' disabled/></td>
+            </tr>
+            <tr>
+                <td>手机号：</td>
+                <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td>邮箱：</td>
+                <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td>城市：</td>
+                <td><input type="text"/></td>
+            </tr>
+        </table>
+        <div class="c-item">
+            <div class="c-checkbox">
+                <input type="checkbox" id="check"/><label for="check"></label>
+            </div><div style="margin-left: 50px;">同意投保，并符合以下<a href="#">健康状况</a></div>
+        </div>
+        <div class="c-item">
+            <div class="c-btn c-btn-full c-bg">￥{{fee}}.00 立即投保</div>
+        </div>
+    </div>
+
+
+</div>
